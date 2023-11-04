@@ -1,0 +1,38 @@
+// Version: 1.0.0
+type Account =
+  {accountName : Text; id : Text; phNo : Text; service : Text; site : Text};
+type Customer =
+  {
+    address : Text;
+    company : Text;
+    description : Text;
+    email : Text;
+    id : Text;
+    leadOwner : Text;
+    leadSource : Text;
+    name : Text;
+    phoneNo : Text
+  };
+type List<T> = ?(T, List<T>);
+type Meeting =
+  {from : Text; id : Text; relatedTo : Text; title : Text; to : Text};
+type Tasks =
+  {
+    dueDate : Text;
+    id : Text;
+    priority : Text;
+    status : Text;
+    task : Text;
+    taskOwner : Text
+  };
+actor {
+  stable var accCount : Nat;
+  stable var accounts : ?(Account, List<Account>);
+  stable var currentValue : Nat;
+  stable var customers : ?(Customer, List<Customer>);
+  stable var idCount : Nat;
+  stable var meetCount : Nat;
+  stable var meetings : ?(Meeting, List<Meeting>);
+  stable var taskCount : Nat;
+  stable var tasks : ?(Tasks, List<Tasks>)
+};

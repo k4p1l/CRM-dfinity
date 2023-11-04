@@ -1,0 +1,166 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .container {
+    background-color: #c2d9ff;
+    position: sticky;
+    width: 100%;
+    height: 100%;
+  }
+  
+  header {
+    background-color: #c2d9ff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+    border-bottom: 5px solid #190482;
+    height: 50px;
+    width: auto;
+  }
+  
+  .categories {
+    display: flex;
+    gap: 140px;
+  }
+  .category {
+    font-family: inter;
+    font-size: 28px;
+    margin: auto;
+    cursor: pointer;
+  }
+  
+  .bruh {
+    display: inline-block;
+    position: relative;
+    color: #190482;
+  }
+  .bruh::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    padding-bottom: 0.08rem;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #7752fe;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .bruh:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    background-color: #190482;
+  }
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-right: 5px solid #190482;
+    padding: 2px;
+    height: 50px;
+  }
+  
+  .tablecontainer {
+    margin: 0 20px;
+    background-color: #ffffff;
+    border-right: 2px solid #190482;
+    border-left: 2px solid #190482;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin: 0 0 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 800;
+    color: #190482;
+    margin-right: 50px;
+  }
+  
+  .profile {
+    margin-left: auto;
+    margin-right: 10px;
+    align-self: center;
+    margin-top: 4.4px;
+  }
+  .pfp {
+    height: 40px;
+    border-radius: 100px;
+    border: 5px solid #c5f210;
+  }
+  
+  table {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+  }
+  
+  table,
+  th,
+  td {
+    border-bottom: 2px solid #190482;
+    border-top: 2px solid #190482;
+    color: #190482;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  th,
+  td {
+    padding: 15px;
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  
+  th {
+    background-color: #ffffff;
+    color: #190482;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgb(240, 248, 255);
+    color: #190482;
+  }
+  
+  .createbtn {
+    text-align: right;
+  }
+  .createbtn button {
+    margin: 10px;
+    margin-right: 20px;
+    width: 171px;
+    height: 48px;
+    padding: 0 0px;
+    font-family: inter;
+    font: 700;
+    font-size: 20px;
+    border: 2px solid #190482;
+    border-radius: 1.295px;
+    background: #8e8ffa;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.12s ease-out;
+    position: relative;
+    box-shadow: 3px 3px 0px 0px #000;
+  }
+  
+  .createbtn button:hover {
+    background-color: #7752fe;
+    transform: scale(95%);
+  }
+  
+  .createbtn button:active {
+    background-color: #190482;
+    transform: scale(92%);
+    box-shadow: 0px 0px 0px 0px #190482;
+    color: #c2d9ff;
+  }
+  

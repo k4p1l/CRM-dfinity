@@ -1,0 +1,50 @@
+type Tasks = 
+ record {
+   dueDate: text;
+   id: text;
+   priority: text;
+   status: text;
+   task: text;
+   taskOwner: text;
+ };
+type Meeting = 
+ record {
+   from: text;
+   id: text;
+   relatedTo: text;
+   title: text;
+   to: text;
+ };
+type Customer = 
+ record {
+   address: text;
+   company: text;
+   description: text;
+   email: text;
+   id: text;
+   leadOwner: text;
+   leadSource: text;
+   name: text;
+   phoneNo: text;
+ };
+type Account = 
+ record {
+   accountName: text;
+   id: text;
+   phNo: text;
+   "service": text;
+   site: text;
+ };
+service : {
+  addAcc: (text, text, text, text) -> () oneway;
+  addCustomer: (text, text, text, text, text, text, text, text) -> () oneway;
+  addMeeting: (text, text, text, text) -> () oneway;
+  addTasks: (text, text, text, text, text) -> () oneway;
+  addUser: (text, text, text, text, text, text, text, text) -> () oneway;
+  getAccounts: () -> (vec Account) query;
+  getCustomers: () -> (vec Customer) query;
+  getMeeting: () -> (vec Meeting) query;
+  getTask: () -> (vec Tasks) query;
+  getValue: () -> (nat) query;
+  increment: () -> ();
+}

@@ -2,23 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>NewCrm</title>
-    <base href="/" />
-    <link rel="icon" href="favicon.ico" />
-    <link type="text/css" rel="stylesheet" href="main.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main>
-      <img src="logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting"></section>
-    </main>
+    <div id="root"></div>
+    <script type="module">
+      /**
+       * @dfinity/agent requires this. Can be removed once it's fixed
+       */
+      import { Buffer } from "buffer"
+
+      window.global = window
+      window.Buffer = Buffer
+    </script>
+    <script type="module" src="/src/NewCrm_frontend/src/index.jsx"></script>
   </body>
 </html>
