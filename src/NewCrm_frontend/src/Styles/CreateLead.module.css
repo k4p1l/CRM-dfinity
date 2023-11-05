@@ -123,6 +123,8 @@ h1 {
   height: 40px;
   width: 500px;
   margin: 0px;
+  font-family: inter;
+  font-size: 20px;
 }
 .one {
   display: flex;

@@ -54,19 +54,19 @@ const CreateLead = () => {
         <div className={cl.heading}>Create Lead</div>
         <div className={cl.wrapper}>
           <div className={cl.one}>
-            Lead Owner
+            Full Name
             <input className={cl.custom} id="leadOwner" type="text" />
           </div>
           <div className={cl.two}>
-            Full Name
+            Lead Owner
             <input className={cl.custom} id="fullName" type="text" />
           </div>
           <div className={cl.three}>
-            Phone No
+            Address
             <input className={cl.custom} id="phNo" type="text" />
           </div>
           <div className={cl.four}>
-            Address
+          Phone No
             <input className={cl.custom} id="address" type="text" />
           </div>
           <div className={cl.five}>
