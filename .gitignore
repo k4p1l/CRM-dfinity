@@ -17,8 +17,8 @@
 target/
 
 # frontend code
-node_modules/
 
 
 # environment variables
+
 
