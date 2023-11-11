@@ -1,3 +1,8 @@
+@font-face {
+  font-family: BLKND;
+  src: url(../fonts/BLKND-SANS.otf);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,7 +13,7 @@
     justify-content: center;
   }
   .crm {
-    font-family: blknd;
+    font-family: BLKND;
     color: #000;
     font-size: 80px;
     font-weight: bold;
@@ -30,7 +35,7 @@
     color: #000;
     font-size: 50px;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 800;
     line-height: normal;
     margin-top: 0px;
   }
@@ -42,7 +47,7 @@
     font-family: inter;
     color: #000;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: normal;
     margin-top: 0px;
   }
@@ -59,6 +64,7 @@
   
   .input {
     font-family: inter;
+    font-weight: 800;
     padding: 5px;
     height: 150px;
     width: 400px;
@@ -80,6 +86,7 @@
     margin: auto;
     margin-top: 20px;
     font-size: 26px;
+    font-weight: 800;
     border: 3px solid var(--onyx-0, #000);
     background: #fff;
     font-family: inter;

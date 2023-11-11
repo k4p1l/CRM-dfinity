@@ -144,7 +144,7 @@ tr:nth-child(even) {
   height: 48px;
   padding: 0 0px;
   font-family: inter;
-  font: 700;
+  font-weight: 800;
   font-size: 20px;
   border: 2px solid #190482;
   border-radius: 1.295px;

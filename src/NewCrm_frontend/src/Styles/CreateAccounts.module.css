@@ -190,6 +190,7 @@ select {
 
 .cancel {
   font-family: inter;
+  font-weight: 800;
   border: 2px solid var(--onyx-0, #000);
   background: #ffffff;
   width: 150px;
@@ -203,6 +204,7 @@ select {
 
 .save {
   font-family: inter;
+  font-weight: 800;
   border: 2px solid var(--onyx-0, #190482);
   background: #8e8ffa;
   font-size: 18px;
