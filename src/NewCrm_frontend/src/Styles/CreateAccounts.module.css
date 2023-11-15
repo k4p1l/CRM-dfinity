@@ -110,7 +110,7 @@ h1 {
   grid-auto-rows: minmax(100px, auto);
   margin: 2vw;
   font-family: inter;
-  font-weight: 700;
+  font-weight: 800;
   color: #190482;
   font-size: 20px;
 }
@@ -120,6 +120,9 @@ h1 {
   height: 40px;
   width: 500px;
   margin: 0px;
+  font-family: inter;
+  font-weight: 800;
+  font-size: 24px;
 }
 .one {
   display: flex;
@@ -165,6 +168,7 @@ select {
   margin: 0px;
   padding: 1px 2px;
   font-family: inter;
+  font-weight: 800;
 }
 .seven {
   display: flex;

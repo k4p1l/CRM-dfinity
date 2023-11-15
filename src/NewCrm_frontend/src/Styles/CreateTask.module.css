@@ -111,7 +111,7 @@ h1 {
   grid-auto-rows: minmax(100px, auto);
   margin: 2vw;
   font-family: inter;
-  font-weight: 700;
+  font-weight: 800;
   color: #190482;
   font-size: 20px;
 }
@@ -122,6 +122,7 @@ h1 {
   width: 500px;
   margin: 0px;
   font-family: inter;
+  font-weight: 800;
   font-size: 20px;
 }
 .one {
@@ -129,7 +130,6 @@ h1 {
   flex-direction: column;
   grid-column: 1;
   grid-row: 1;
- 
 }
 .two {
   display: flex;
@@ -162,8 +162,6 @@ h1 {
   grid-row: 2;
 }
 
-
-
 select {
   border: 3px solid #190482;
   height: 46.8px;
@@ -171,8 +169,8 @@ select {
   margin: 0px;
   padding: 1px 2px;
   font-family: inter;
+  font-weight: 800;
 }
-
 
 .seven {
   display: flex;

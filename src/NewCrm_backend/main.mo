@@ -58,14 +58,14 @@ actor {
   stable var idCount = 0;
   stable var meetCount = 0;
   stable var taskCount = 0;
-  stable var accCount = 0;
+   var accCount = 0;
 
   //   stable var count :Int = 0;
  // var customers : [Customer] = [];
   stable var customers: List.List<Customer> = List.nil<Customer>();
   stable var meetings: List.List<Meeting> = List.nil<Meeting>();
   stable var tasks: List.List<Tasks> = List.nil<Tasks>();
-  stable var accounts : List.List<Account> = List.nil<Account>() ;
+   var accounts : List.List<Account> = List.nil<Account>() ;
 // 
 // 
 // 
@@ -167,40 +167,6 @@ public query func getAccounts() : async [Account] {
     currentValue
   };
 
-  // public shared (msg) func authUser(usernameToFind : Text, pass : Text) : async Text {
-  //   var checkUser = Array.find(
-  //     users,
-  //     func(user : User) : Bool {
-  //       var checkPass = Array.find(
-  //         users,
-  //         func(user : User) : Bool {
-  //           if (user.username.name == usernameToFind) {
-  //             if (user.password.pass == pass and user.password.id == user.id) {
-  //               return user.username.name == usernameToFind
-  //             } else {
-  //               return false
-  //             }
-  //           } else {
-  //             return false
-  //           }
-  //         },
-  //       );
-  //       if (checkPass == null) {
-  //         return false
-  //       } else {
-  //         return user.username.name == usernameToFind
-  //       }
-  //     },
-  //   );
-  //   Debug.print(debug_show (checkUser));
-  //   if (checkUser == null) {
-  //     return "not Exists"
-  //   } else {
-  //     return "exists"
-  //   }
-  //   // return checkUser;
-  // };
-
   public func addUser(leadOwnerI : Text, nameI : Text, phoneNoI: Text, addressI: Text, companyI : Text, leadSourceI: Text, emailI : Text, descriptionI : Text) {
     
     idCount := idCount +1;
@@ -220,7 +186,4 @@ public query func getAccounts() : async [Account] {
     Debug.print(debug_show (customers));
   };
 
-  // public query func userList() : async [User]{
-  //   return users;
-  // };
 }

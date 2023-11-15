@@ -1,6 +1,4 @@
 // Version: 1.0.0
-type Account =
-  {accountName : Text; id : Text; phNo : Text; service : Text; site : Text};
 type Customer =
   {
     address : Text;
@@ -26,8 +24,6 @@ type Tasks =
     taskOwner : Text
   };
 actor {
-  stable var accCount : Nat;
-  stable var accounts : ?(Account, List<Account>);
   stable var currentValue : Nat;
   stable var customers : ?(Customer, List<Customer>);
   stable var idCount : Nat;

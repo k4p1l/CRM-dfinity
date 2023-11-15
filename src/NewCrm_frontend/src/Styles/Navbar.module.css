@@ -1,3 +1,7 @@
+@font-face {
+  font-family: BLKND;
+  src: url(../fonts/BLKND-SANS.otf);
+}
 header {
   background-color: #c2d9ff;
   display: flex;
@@ -49,6 +53,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   border-right: 5px solid #190482;
   padding: 2px;
   height: 50px;
@@ -59,15 +64,13 @@ header {
   width: 72px;
 }
 
-h1 {
-  font-size: 48px;
+.heading {
+  font-size: 32px;
   margin: 0 0 0px;
-  font-family: inter;
+  font-family: BLKND;
   font-weight: 800;
   color: #190482;
-  margin-right: 50px;
-  margin-left: 50px;
-  letter-spacing: -4px;
+margin-right: 10px;
 }
 
 .profile {
